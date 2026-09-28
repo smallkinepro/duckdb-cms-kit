@@ -1,0 +1,26 @@
+name: duckdb_cms_kit
+version: "1.0.0"
+config-version: 2
+profile: duckdb_cms_kit
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+analysis-paths: ["analyses"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  duckdb_cms_kit:
+    +materialized: table
+    staging:
+      +schema: staging
+      +materialized: table
+    marts:
+      +schema: marts
+      +materialized: table
+
+vars:
+  # Bronze Parquet path relative to dbt_project/
+  bronze_hgi_parquet_relpath: "../data/bronze/cms_hgi.parquet"

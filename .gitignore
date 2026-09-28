@@ -1,0 +1,40 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# dbt
+dbt_project/target/
+dbt_project/dbt_packages/
+dbt_project/logs/
+dbt_project/profiles.yml
+dbt_project/.user.yml
+
+# Local DuckDB and data artifacts
+*.duckdb
+*.duckdb.wal
+data/bronze/**
+!data/bronze/.gitkeep
+data/snapshots/**
+!data/snapshots/.gitkeep
+
+# Provenance JSON is small and OK to commit
+provenance/**
+!provenance/.gitkeep
+!provenance/*.json
+
+# Secrets / env
+.env
+.env.*
+!.env.example
+*.token
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+*.swp

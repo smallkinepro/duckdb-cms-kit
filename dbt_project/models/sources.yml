@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: bronze
+    description: >
+      Local Parquet bronze written by scripts/ingest_cms_hgi.py.
+      Official CMS Provider Data Catalog CSV (no HTML scrape).
+      Facility-level public aggregates — no PHI. CMS is the data owner.
+    meta:
+      cms_catalog: CMS Provider Data Catalog
+      dataset_id: xubh-q36u
+      page_url: https://data.cms.gov/provider-data/dataset/xubh-q36u
+    tables:
+      - name: cms_hgi
+        description: >
+          Hospital General Information (xubh-q36u). Facility grain.
+        columns:
+          - name: "Facility ID"
+            description: CMS facility identifier (CCN)
+          - name: "Facility Name"
+          - name: "State"
+          - name: "Hospital Type"
+          - name: "Hospital Ownership"
+          - name: "Emergency Services"

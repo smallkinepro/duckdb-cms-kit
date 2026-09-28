@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: stg_cms_hospital_general_information
+    description: >
+      Staging for CMS Hospital General Information (xubh-q36u).
+      Snake_case columns; empty facility_id rows dropped. Grain: one row per facility.
+    columns:
+      - name: facility_id
+        description: CMS Certification Number / facility ID (primary key)
+        tests:
+          - unique
+          - not_null
+      - name: facility_name
+        tests:
+          - not_null
+      - name: state
+        description: Two-letter state / territory code
+      - name: hospital_type
+      - name: hospital_ownership
+      - name: emergency_services

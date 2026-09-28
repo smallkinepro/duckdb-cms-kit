@@ -1,0 +1,21 @@
+{
+  "pulled_at": "2026-09-28T15:58:03Z",
+  "source_url": "https://data.cms.gov/provider-data/sites/default/files/resources/893c372430d9d71a1c52737d01239d47_1785189955/Hospital_General_Information.csv",
+  "page_url": "https://data.cms.gov/provider-data/dataset/xubh-q36u",
+  "dataset_id": "xubh-q36u",
+  "title": "Hospital General Information",
+  "resolution_path": "metastore",
+  "sha256": "f874f09fef895a1ccf5bb7392dcbb2be05c9860339261b093fe00f0c1b013480",
+  "row_count": 5419,
+  "snapshot_path": "data/snapshots/cms_hgi_20260928.csv",
+  "bronze_path": "data/bronze/cms_hgi.parquet",
+  "license_note": "CMS Provider Data Catalog open data \u2014 facility-level public aggregates; no PHI. CMS is the data owner.",
+  "data_owner": "Centers for Medicare & Medicaid Services (CMS)",
+  "gate": {
+    "public_by_design": true,
+    "phi": false,
+    "grain": "facility",
+    "official_api_csv": true,
+    "html_scrape": false
+  }
+}

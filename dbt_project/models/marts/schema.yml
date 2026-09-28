@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: mart_hospital_counts_by_state
+    description: Hospital counts by state from CMS Hospital General Information.
+    columns:
+      - name: state
+        description: Two-letter state / territory code
+        tests:
+          - unique
+          - not_null
+      - name: hospital_count
+        tests:
+          - not_null

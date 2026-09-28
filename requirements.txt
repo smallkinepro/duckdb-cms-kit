@@ -1,0 +1,4 @@
+# duckdb-cms-kit — minimal runtime
+duckdb>=1.1.0
+dbt-duckdb>=1.8.0
+httpx>=0.27.0
