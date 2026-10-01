@@ -20,7 +20,7 @@ scrape. CMS remains the data owner; this repo only demonstrates local analytics.
 ## Quick start
 
 ```bash
-git clone https://github.com/davidshimamoto/duckdb-cms-kit.git
+git clone https://github.com/smallkinepro/duckdb-cms-kit.git
 cd duckdb-cms-kit
 
 python3 -m venv .venv
